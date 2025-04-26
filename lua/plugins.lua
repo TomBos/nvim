@@ -1,21 +1,24 @@
 return {
 
   -- Telescope
-  require("config.telescope"),
+  require("plugins.telescope"),
 
   -- NeoTree plugin
-  require("config.neo_tree"),
+  require("plugins.neo_tree"),
 
   -- Lualine
-  require("config.lualine"),
+  require("plugins.lualine"),
 
   -- One Dark Color theme
-  require("config.one_dark"),
+  require("plugins.one_dark"),
 
   -- Nvim Tree
-  require("config.nvim_tree"),
+  require("plugins.nvim_tree"),
 
   -- Tree Sitter
-  require("config.tree_sitter"),
+  require("plugins.tree_sitter"),
+
+  -- LSP
+  require("plugins.lsp_config")
 
 }
