@@ -26,3 +26,5 @@ vim.keymap.set("n", "<C-e>", builtin.live_grep, {})
 -- Neotree (File Explorer)
 vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal<CR>", {}) 
 
+-- Lsp
+vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
