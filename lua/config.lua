@@ -15,4 +15,10 @@ return {
   -- Tree Sitter
   require("plugins.tree_sitter"),
 
+  -- Color Scheme
+  require("plugins.color_scheme"),
+
+  -- LSP
+  require("plugins.lsp_config"),
+
 }
