@@ -28,5 +28,12 @@ vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal<CR>", {})
 -- Lsp
 vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+vim.keymap.set({ "n" }, "<leader>ca", vim.lsp.buf.code_action, {})
 
+
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+})
