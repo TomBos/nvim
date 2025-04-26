@@ -5,6 +5,7 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set number")
 vim.o.termguicolors = true
 vim.o.mouse = ""
+vim.g.loaded_perl_provider = 0  -- Disable Perl provider warning
 
 -- Nvim package manager
 require("config.lazy")
