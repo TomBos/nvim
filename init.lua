@@ -8,10 +8,7 @@ vim.o.mouse = ""
 vim.g.loaded_perl_provider = 0  -- Disable Perl provider warning
 
 -- Nvim package manager
-require("config.lazy")
-
--- Color Scheme
-require('onedark').load()
+require("plugins.lazy")
 
 -- Telescope (File Search)
 local builtin = require("telescope.builtin")

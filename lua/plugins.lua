@@ -9,9 +9,6 @@ return {
   -- Lualine
   require("plugins.lualine"),
 
-  -- One Dark Color theme
-  require("plugins.one_dark"),
-
   -- Nvim Tree
   require("plugins.nvim_tree"),
 
