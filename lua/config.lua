@@ -18,4 +18,7 @@ return {
   -- LSP
   require("plugins.lsp_config"),
 
+  -- Colorscheme
+  require("plugins.color_scheme"),
+
 }

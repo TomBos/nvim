@@ -13,6 +13,9 @@ vim.g.loaded_perl_provider = 0  -- Disable Perl provider warning
 -- Nvim package manager
 require("plugins.lazy")
 
+-- Color Scheme
+require('onedark').load()
+
 -- Telescope (File Search)
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<C-p>", builtin.find_files, {})

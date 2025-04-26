@@ -23,12 +23,6 @@ require("lazy").setup({
     { import = "config" },
   },
   
-  require('onedark').setup {
-    style = 'darker'
-  },
-
-  require('onedark').load()
-
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
