@@ -1,3 +1,7 @@
+-- init.lua
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
@@ -5,7 +9,7 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set number")
 vim.o.termguicolors = true
 vim.o.mouse = ""
-vim.g.loaded_perl_provider = 0  -- Disable Perl provider warning
+vim.g.loaded_perl_provider = 0
 
 -- Nvim package manager
 require("plugins.lazy")
