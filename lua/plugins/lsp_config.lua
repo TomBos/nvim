@@ -13,7 +13,7 @@ return {
           "lua_ls"
         }
       })
-    end  
+    end
   },
   {
     "neovim/nvim-lspconfig",

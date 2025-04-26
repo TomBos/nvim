@@ -6,7 +6,6 @@ vim.cmd("set number")
 vim.o.termguicolors = true
 vim.o.mouse = ""
 vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
 vim.g.loaded_perl_provider = 0  -- Disable Perl provider warning
 
 
@@ -24,7 +23,10 @@ vim.keymap.set("n", "<C-p>", builtin.find_files, {})
 vim.keymap.set("n", "<C-e>", builtin.live_grep, {})
 
 -- Neotree (File Explorer)
-vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal<CR>", {}) 
+vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal<CR>", {})
 
 -- Lsp
 vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+
